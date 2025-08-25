@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", Sans-Serif;
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.card {
+  background: hsl(0, 0%, 12%);
+  border-radius: 20px;
+  padding: 32px;
+  max-width: 350px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  box-shadow: 0, 4px, 12px rgba(0, 0, 0, 0.5);
+}
+.me {
+  width: 90px;
+  height: 99px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.card h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.tag {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+}
+.bio {
+  font-size: 14px;
+  color: hsl(0, 0%, 70%);
+  margin-bottom: 24px;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.links a {
+  display: block;
+  background: hsl(0, 0%, 20%);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.links a:hover {
+  background: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 50%);
+  margin: 20px 0;
+}
+.attribution a {
+  color: hsl(75, 94%, 57%);
+  text-decoration: none;
+}
+@media (min-width:768px) {
+  .card {
+    max-width: 420px;
+    padding: 40px;
+  }
+  .card h1 {
+    font-size: 26px;
+  }
+  .bio {
+    font-size: 15px;
+  }
+  .links a {
+    padding: 14px;
+    font-size: 15px;
+  }
+  }
+}
